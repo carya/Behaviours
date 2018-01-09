@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = "Image Picker Behaviour"; ObjectID = "8Kn-Al-aK7"; */
+"8Kn-Al-aK7.normalTitle" = "Image Picker Behaviour";
+
+/* Class = "UIButton"; normalTitle = "Strechy Header"; ObjectID = "Sd0-pr-3yc"; */
+"Sd0-pr-3yc.normalTitle" = "Strechy Header";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "edJ-n6-kHu"; */
+"edJ-n6-kHu.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Character Limit Behaviour"; ObjectID = "u8I-CH-iyw"; */
+"u8I-CH-iyw.normalTitle" = "Character Limit Behaviour";
+
+/* Class = "UIButton"; normalTitle = "Parallax Behaviour"; ObjectID = "uHx-lF-UVQ"; */
+"uHx-lF-UVQ.normalTitle" = "Parallax Behaviour";
+
+/* Class = "UIButton"; normalTitle = "Blurred Parallax Behaviour"; ObjectID = "xRI-gi-eHA"; */
+"xRI-gi-eHA.normalTitle" = "Blurred Parallax Behaviour";
