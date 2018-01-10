@@ -25,6 +25,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Kn-Al-aK7">
                                 <rect key="frame" x="107.5" y="164" width="161" height="30"/>
                                 <state key="normal" title="Image Picker Behaviour"/>
+                                <connections>
+                                    <segue destination="OxP-He-LbK" kind="show" id="c88-1j-oTd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8I-CH-iyw">
                                 <rect key="frame" x="98.5" y="214" width="178" height="30"/>
@@ -178,6 +181,52 @@
                 </customObject>
             </objects>
             <point key="canvasLocation" x="332" y="139"/>
+        </scene>
+        <!--Owner-->
+        <scene sceneID="I1z-xk-bdx">
+            <objects>
+                <viewController id="OxP-He-LbK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RW2-1d-kWe"/>
+                        <viewControllerLayoutGuide type="bottom" id="pmR-zH-RWm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Omd-lb-1ap">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jrd-d2-WYR">
+                                <rect key="frame" x="16" y="114" width="343" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="dn9-9Z-C7j"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYj-4k-359">
+                                <rect key="frame" x="150" y="534" width="75" height="30"/>
+                                <state key="normal" title="Pick Image"/>
+                                <connections>
+                                    <action selector="pickImage:" destination="tVo-YN-Hm2" eventType="touchUpInside" id="b4r-mo-3vf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tYj-4k-359" firstAttribute="centerX" secondItem="Omd-lb-1ap" secondAttribute="centerX" id="J22-id-8mp"/>
+                            <constraint firstItem="Jrd-d2-WYR" firstAttribute="top" secondItem="RW2-1d-kWe" secondAttribute="bottom" constant="50" id="Kv5-WC-Blv"/>
+                            <constraint firstItem="Jrd-d2-WYR" firstAttribute="leading" secondItem="Omd-lb-1ap" secondAttribute="leadingMargin" id="PnK-E3-rpT"/>
+                            <constraint firstItem="tYj-4k-359" firstAttribute="top" secondItem="Jrd-d2-WYR" secondAttribute="bottom" constant="20" id="hEl-qQ-IV4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jrd-d2-WYR" secondAttribute="trailing" id="idD-Lg-ldq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qis-nU-Hsv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="tVo-YN-Hm2" customClass="CLImagePickerBehaviour">
+                    <connections>
+                        <outlet property="owner" destination="OxP-He-LbK" id="wbC-Wl-BYc"/>
+                        <outlet property="targetImageView" destination="Jrd-d2-WYR" id="JXj-e3-TcM"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="332" y="-557"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="G8s-Ed-jTg">

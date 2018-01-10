@@ -17,7 +17,8 @@
 
 @implementation CLBlurBehaviour
 
-- (IBAction)refresh {
+-(IBAction)refresh
+{
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.blurredView removeFromSuperview];
         
@@ -26,40 +27,48 @@
         UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         CIImage *beginImage = [CIImage imageWithCGImage:image.CGImage];
-        CIContext *context = [CIContext contextWithOptions:nil];
+        CIContext* context = [CIContext contextWithOptions:nil];
         
         CIFilter *filter = [CIFilter filterWithName:@"CIGaussianBlur" keysAndValues:kCIInputImageKey, beginImage, @"inputRadius", @(self.blurRadius), nil];
         CIImage *outputImage = [filter outputImage];
         
+        
         CGImageRef cgimg = [context createCGImage:outputImage fromRect:[beginImage extent]];
         UIGraphicsEndImageContext();
         UIImage *newImage = [UIImage imageWithCGImage:cgimg];
-        self.blurredView = [[UIImageView alloc] initWithImage:newImage];
+        self.blurredView=[[UIImageView alloc] initWithImage:newImage];
         [self updateBlurredViewFrame];
         [self.targetView addSubview:self.blurredView];
         [self adjustBlur];
+        
     });
 }
 
-- (void)adjustBlur {
+- (void)adjustBlur{
+    
     CGPoint center = self.leadingScrollView.contentOffset;
-    float xProgress = center.x / (self.fullBlurOffset.x != 0 ? self.fullBlurOffset.x : 1.f);
-    float yProgress = center.y / (self.fullBlurOffset.y != 0 ? self.fullBlurOffset.y : 1.f);
-    float alpha = xProgress + yProgress;
+    float xProgress=center.x/(self.fullBlurOffset.x!=0?self.fullBlurOffset.x:1.f);
+    float yProgress=center.y/(self.fullBlurOffset.y!=0?self.fullBlurOffset.y:1.f);
+    float alpha=xProgress+yProgress;
     [self.blurredView setAlpha:alpha];
     [self updateBlurredViewFrame];
+    
 }
 
-- (void)updateBlurredViewFrame {
-    self.blurredView.frame = self.targetView.bounds;
+-(void)updateBlurredViewFrame
+{
+    self.blurredView.frame=self.targetView.bounds;
     //hide borders out of frame as they are not blurred
-    self.blurredView.frame = CGRectInset(self.blurredView.frame, -2 * self.blurRadius, -2 * self.blurRadius);
+    self.blurredView.frame=CGRectInset(self.blurredView.frame, -2*self.blurRadius, -2*self.blurRadius);
+    
 }
 
 #pragma mark - UIScrollViewDelegate
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    if(!self.blurredView) {
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if(!self.blurredView)
+    {
         [self refresh];
     }
     [self adjustBlur];

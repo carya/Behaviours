@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE39C4022006611100F41253 /* CLImagePickerBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = FE39C4012006611100F41253 /* CLImagePickerBehaviour.m */; };
 		FEAA5B431FFE658800E2FA26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAA5B421FFE658800E2FA26 /* AppDelegate.m */; };
 		FEAA5B461FFE658800E2FA26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAA5B451FFE658800E2FA26 /* ViewController.m */; };
 		FEAA5B491FFE658800E2FA26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAA5B471FFE658800E2FA26 /* Main.storyboard */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE39C4002006611100F41253 /* CLImagePickerBehaviour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLImagePickerBehaviour.h; sourceTree = "<group>"; };
+		FE39C4012006611100F41253 /* CLImagePickerBehaviour.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLImagePickerBehaviour.m; sourceTree = "<group>"; };
 		FEAA5B3E1FFE658800E2FA26 /* BehaviourDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BehaviourDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAA5B411FFE658800E2FA26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEAA5B421FFE658800E2FA26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE39C3FF200660EF00F41253 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				FE39C4002006611100F41253 /* CLImagePickerBehaviour.h */,
+				FE39C4012006611100F41253 /* CLImagePickerBehaviour.m */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
 		FEAA5B351FFE658800E2FA26 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +173,7 @@
 		FEAA5B7920006DDD00E2FA26 /* Behaviours */ = {
 			isa = PBXGroup;
 			children = (
+				FE39C3FF200660EF00F41253 /* ImagePicker */,
 				FEAA5B7B20006E1B00E2FA26 /* StretchyHeader */,
 				FEAA5B7A20006DF600E2FA26 /* Blur */,
 				FEAA5B7C2000737000E2FA26 /* CLBehaviour.h */,
@@ -330,6 +343,7 @@
 				FEAA5B8720011F5E00E2FA26 /* CLBlurBehaviour.m in Sources */,
 				FEAA5B431FFE658800E2FA26 /* AppDelegate.m in Sources */,
 				FEAA5B812000781600E2FA26 /* CLMultiplexerProxyBehaviour.m in Sources */,
+				FE39C4022006611100F41253 /* CLImagePickerBehaviour.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
