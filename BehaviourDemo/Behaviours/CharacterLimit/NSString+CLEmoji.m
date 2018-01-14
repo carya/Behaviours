@@ -1,21 +1,21 @@
 //
-//  NSString+ACIEmoji.m
+//  NSString+CLEmoji.m
 //  Util
 //
 //  Created by Carya on 11/10/2017.
 //  Copyright © 2017 danlu. All rights reserved.
 //
 
-#import "NSString+ACIEmoji.h"
+#import "NSString+CLEmoji.h"
 #import "NSString+EMOEmoji.h"
 
-@implementation NSString (ACIEmoji)
+@implementation NSString (CLEmoji)
 
-- (NSArray<NSValue *> *)aci_emojiRanges {
+- (NSArray<NSValue *> *)cl_emojiRanges {
     return [self emo_emojiRanges];
 }
 
-- (NSString *)aci_truncateTailingToMaxLength:(NSUInteger)maxLength {
+- (NSString *)cl_truncateTailingToMaxLength:(NSUInteger)maxLength {
     if ([self length] <= maxLength) {
         return self;
     }
@@ -24,7 +24,7 @@
     }
     
     __block NSString *truncatedStr = self;
-    NSArray<NSValue *> *emojiRanges = [self aci_emojiRanges];
+    NSArray<NSValue *> *emojiRanges = [self cl_emojiRanges];
     [emojiRanges enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(NSValue * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         NSRange range = [obj rangeValue];
         NSInteger maxRange = NSMaxRange(range);

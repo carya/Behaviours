@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		2A0615F4CB2741323B6EE669 /* libPods-BehaviourDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF698C7D8045D51926B5642 /* libPods-BehaviourDemo.a */; };
 		4A5EFE5520083AEF00DFF600 /* CLCharacterLimitBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5EFE5320083AEF00DFF600 /* CLCharacterLimitBehaviour.m */; };
-		4A5EFE5820083D0500DFF600 /* NSString+ACIEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5EFE5620083D0500DFF600 /* NSString+ACIEmoji.m */; };
+		4A5EFE5820083D0500DFF600 /* NSString+CLEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5EFE5620083D0500DFF600 /* NSString+CLEmoji.m */; };
 		8D534CD25B84E4ED9236F68D /* libPods-BehaviourDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C9DEBCC3296486C93B829F /* libPods-BehaviourDemoUITests.a */; };
 		E7F239BEFF870F127A6D45E3 /* libPods-BehaviourDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682925020828B2BA4E23B6A6 /* libPods-BehaviourDemoTests.a */; };
 		FE39C4022006611100F41253 /* CLImagePickerBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = FE39C4012006611100F41253 /* CLImagePickerBehaviour.m */; };
 		FE39C4062007A12300F41253 /* CLBecomeFirstResponderBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = FE39C4052007A12300F41253 /* CLBecomeFirstResponderBehaviour.m */; };
-		FE39C40A2007AE8900F41253 /* CLParallaxAnimationBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = FE39C4092007AE8900F41253 /* CLParallaxAnimationBehaviour.m */; };
 		FEAA5B431FFE658800E2FA26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAA5B421FFE658800E2FA26 /* AppDelegate.m */; };
 		FEAA5B461FFE658800E2FA26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAA5B451FFE658800E2FA26 /* ViewController.m */; };
 		FEAA5B491FFE658800E2FA26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEAA5B471FFE658800E2FA26 /* Main.storyboard */; };
@@ -23,11 +22,8 @@
 		FEAA5B511FFE658800E2FA26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAA5B501FFE658800E2FA26 /* main.m */; };
 		FEAA5B5B1FFE658800E2FA26 /* BehaviourDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAA5B5A1FFE658800E2FA26 /* BehaviourDemoTests.m */; };
 		FEAA5B661FFE658800E2FA26 /* BehaviourDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAA5B651FFE658800E2FA26 /* BehaviourDemoUITests.m */; };
-		FEAA5B761FFE6CDA00E2FA26 /* StrechyHeaderExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAA5B751FFE6CDA00E2FA26 /* StrechyHeaderExampleViewController.m */; };
 		FEAA5B7E2000737000E2FA26 /* CLBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAA5B7D2000737000E2FA26 /* CLBehaviour.m */; };
 		FEAA5B812000781600E2FA26 /* CLMultiplexerProxyBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAA5B802000781600E2FA26 /* CLMultiplexerProxyBehaviour.m */; };
-		FEAA5B842000F24700E2FA26 /* CLStretchyHeaderBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAA5B832000F24700E2FA26 /* CLStretchyHeaderBehaviour.m */; };
-		FEAA5B8720011F5E00E2FA26 /* CLBlurBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAA5B8620011F5E00E2FA26 /* CLBlurBehaviour.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +50,8 @@
 		48E219AC17D998929AE10CBD /* Pods-BehaviourDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BehaviourDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BehaviourDemoUITests/Pods-BehaviourDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4A5EFE5320083AEF00DFF600 /* CLCharacterLimitBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCharacterLimitBehaviour.m; sourceTree = "<group>"; };
 		4A5EFE5420083AEF00DFF600 /* CLCharacterLimitBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCharacterLimitBehaviour.h; sourceTree = "<group>"; };
-		4A5EFE5620083D0500DFF600 /* NSString+ACIEmoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ACIEmoji.m"; sourceTree = "<group>"; };
-		4A5EFE5720083D0500DFF600 /* NSString+ACIEmoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ACIEmoji.h"; sourceTree = "<group>"; };
+		4A5EFE5620083D0500DFF600 /* NSString+CLEmoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CLEmoji.m"; sourceTree = "<group>"; };
+		4A5EFE5720083D0500DFF600 /* NSString+CLEmoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CLEmoji.h"; sourceTree = "<group>"; };
 		6186DB6ED4D4035C3C4EB66C /* Pods-BehaviourDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BehaviourDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BehaviourDemoUITests/Pods-BehaviourDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		682925020828B2BA4E23B6A6 /* libPods-BehaviourDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BehaviourDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC21BAA8A9413EB0EA9EF724 /* Pods-BehaviourDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BehaviourDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BehaviourDemoTests/Pods-BehaviourDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,8 +61,6 @@
 		FE39C4012006611100F41253 /* CLImagePickerBehaviour.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLImagePickerBehaviour.m; sourceTree = "<group>"; };
 		FE39C4042007A12300F41253 /* CLBecomeFirstResponderBehaviour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLBecomeFirstResponderBehaviour.h; sourceTree = "<group>"; };
 		FE39C4052007A12300F41253 /* CLBecomeFirstResponderBehaviour.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLBecomeFirstResponderBehaviour.m; sourceTree = "<group>"; };
-		FE39C4082007AE8900F41253 /* CLParallaxAnimationBehaviour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLParallaxAnimationBehaviour.h; sourceTree = "<group>"; };
-		FE39C4092007AE8900F41253 /* CLParallaxAnimationBehaviour.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLParallaxAnimationBehaviour.m; sourceTree = "<group>"; };
 		FEAA5B3E1FFE658800E2FA26 /* BehaviourDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BehaviourDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAA5B411FFE658800E2FA26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEAA5B421FFE658800E2FA26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,16 +77,10 @@
 		FEAA5B611FFE658800E2FA26 /* BehaviourDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BehaviourDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEAA5B651FFE658800E2FA26 /* BehaviourDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BehaviourDemoUITests.m; sourceTree = "<group>"; };
 		FEAA5B671FFE658800E2FA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FEAA5B741FFE6CDA00E2FA26 /* StrechyHeaderExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrechyHeaderExampleViewController.h; sourceTree = "<group>"; };
-		FEAA5B751FFE6CDA00E2FA26 /* StrechyHeaderExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrechyHeaderExampleViewController.m; sourceTree = "<group>"; };
 		FEAA5B7C2000737000E2FA26 /* CLBehaviour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLBehaviour.h; sourceTree = "<group>"; };
 		FEAA5B7D2000737000E2FA26 /* CLBehaviour.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLBehaviour.m; sourceTree = "<group>"; };
 		FEAA5B7F2000781600E2FA26 /* CLMultiplexerProxyBehaviour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLMultiplexerProxyBehaviour.h; sourceTree = "<group>"; };
 		FEAA5B802000781600E2FA26 /* CLMultiplexerProxyBehaviour.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLMultiplexerProxyBehaviour.m; sourceTree = "<group>"; };
-		FEAA5B822000F24700E2FA26 /* CLStretchyHeaderBehaviour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLStretchyHeaderBehaviour.h; sourceTree = "<group>"; };
-		FEAA5B832000F24700E2FA26 /* CLStretchyHeaderBehaviour.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLStretchyHeaderBehaviour.m; sourceTree = "<group>"; };
-		FEAA5B8520011F5E00E2FA26 /* CLBlurBehaviour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLBlurBehaviour.h; sourceTree = "<group>"; };
-		FEAA5B8620011F5E00E2FA26 /* CLBlurBehaviour.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLBlurBehaviour.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,8 +137,8 @@
 		4A5EFE5220083ADB00DFF600 /* CharacterLimit */ = {
 			isa = PBXGroup;
 			children = (
-				4A5EFE5720083D0500DFF600 /* NSString+ACIEmoji.h */,
-				4A5EFE5620083D0500DFF600 /* NSString+ACIEmoji.m */,
+				4A5EFE5720083D0500DFF600 /* NSString+CLEmoji.h */,
+				4A5EFE5620083D0500DFF600 /* NSString+CLEmoji.m */,
 				4A5EFE5420083AEF00DFF600 /* CLCharacterLimitBehaviour.h */,
 				4A5EFE5320083AEF00DFF600 /* CLCharacterLimitBehaviour.m */,
 			);
@@ -173,15 +161,6 @@
 				FE39C4052007A12300F41253 /* CLBecomeFirstResponderBehaviour.m */,
 			);
 			path = BecomeFirstResponder;
-			sourceTree = "<group>";
-		};
-		FE39C4072007AE5500F41253 /* Parallax */ = {
-			isa = PBXGroup;
-			children = (
-				FE39C4082007AE8900F41253 /* CLParallaxAnimationBehaviour.h */,
-				FE39C4092007AE8900F41253 /* CLParallaxAnimationBehaviour.m */,
-			);
-			path = Parallax;
 			sourceTree = "<group>";
 		};
 		FEAA5B351FFE658800E2FA26 = {
@@ -210,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				FEAA5B7920006DDD00E2FA26 /* Behaviours */,
-				FEAA5B731FFE6CA000E2FA26 /* ViewControllers */,
 				FEAA5B411FFE658800E2FA26 /* AppDelegate.h */,
 				FEAA5B421FFE658800E2FA26 /* AppDelegate.m */,
 				FEAA5B441FFE658800E2FA26 /* ViewController.h */,
@@ -242,48 +220,18 @@
 			path = BehaviourDemoUITests;
 			sourceTree = "<group>";
 		};
-		FEAA5B731FFE6CA000E2FA26 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				FEAA5B741FFE6CDA00E2FA26 /* StrechyHeaderExampleViewController.h */,
-				FEAA5B751FFE6CDA00E2FA26 /* StrechyHeaderExampleViewController.m */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
 		FEAA5B7920006DDD00E2FA26 /* Behaviours */ = {
 			isa = PBXGroup;
 			children = (
-				FE39C4072007AE5500F41253 /* Parallax */,
 				FE39C4032007A10600F41253 /* BecomeFirstResponder */,
 				4A5EFE5220083ADB00DFF600 /* CharacterLimit */,
 				FE39C3FF200660EF00F41253 /* ImagePicker */,
-				FEAA5B7B20006E1B00E2FA26 /* StretchyHeader */,
-				FEAA5B7A20006DF600E2FA26 /* Blur */,
 				FEAA5B7C2000737000E2FA26 /* CLBehaviour.h */,
 				FEAA5B7D2000737000E2FA26 /* CLBehaviour.m */,
 				FEAA5B7F2000781600E2FA26 /* CLMultiplexerProxyBehaviour.h */,
 				FEAA5B802000781600E2FA26 /* CLMultiplexerProxyBehaviour.m */,
 			);
 			path = Behaviours;
-			sourceTree = "<group>";
-		};
-		FEAA5B7A20006DF600E2FA26 /* Blur */ = {
-			isa = PBXGroup;
-			children = (
-				FEAA5B8520011F5E00E2FA26 /* CLBlurBehaviour.h */,
-				FEAA5B8620011F5E00E2FA26 /* CLBlurBehaviour.m */,
-			);
-			path = Blur;
-			sourceTree = "<group>";
-		};
-		FEAA5B7B20006E1B00E2FA26 /* StretchyHeader */ = {
-			isa = PBXGroup;
-			children = (
-				FEAA5B822000F24700E2FA26 /* CLStretchyHeaderBehaviour.h */,
-				FEAA5B832000F24700E2FA26 /* CLStretchyHeaderBehaviour.m */,
-			);
-			path = StretchyHeader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -575,16 +523,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEAA5B842000F24700E2FA26 /* CLStretchyHeaderBehaviour.m in Sources */,
 				4A5EFE5520083AEF00DFF600 /* CLCharacterLimitBehaviour.m in Sources */,
 				FEAA5B461FFE658800E2FA26 /* ViewController.m in Sources */,
-				FEAA5B761FFE6CDA00E2FA26 /* StrechyHeaderExampleViewController.m in Sources */,
 				FEAA5B7E2000737000E2FA26 /* CLBehaviour.m in Sources */,
 				FEAA5B511FFE658800E2FA26 /* main.m in Sources */,
-				4A5EFE5820083D0500DFF600 /* NSString+ACIEmoji.m in Sources */,
-				FEAA5B8720011F5E00E2FA26 /* CLBlurBehaviour.m in Sources */,
+				4A5EFE5820083D0500DFF600 /* NSString+CLEmoji.m in Sources */,
 				FEAA5B431FFE658800E2FA26 /* AppDelegate.m in Sources */,
-				FE39C40A2007AE8900F41253 /* CLParallaxAnimationBehaviour.m in Sources */,
 				FEAA5B812000781600E2FA26 /* CLMultiplexerProxyBehaviour.m in Sources */,
 				FE39C4022006611100F41253 /* CLImagePickerBehaviour.m in Sources */,
 				FE39C4062007A12300F41253 /* CLBecomeFirstResponderBehaviour.m in Sources */,

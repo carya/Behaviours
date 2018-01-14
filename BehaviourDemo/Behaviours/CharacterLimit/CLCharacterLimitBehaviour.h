@@ -19,9 +19,9 @@
 @property(nonatomic, assign) IBInspectable NSUInteger maxCount;
 
 /** hide keyboard and end editing when touched return button */
-@property(nonatomic, assign) BOOL hideKeyboardOnReturn;
+@property(nonatomic, assign) IBInspectable BOOL hideKeyboardOnReturn;
 
 /** end editing when touched return button */
-@property(nonatomic, assign) BOOL endEditingOnReturn;
+@property(nonatomic, assign) IBInspectable BOOL endEditingOnReturn;
 
 @end

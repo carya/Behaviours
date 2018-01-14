@@ -7,7 +7,7 @@
 //
 
 #import "CLCharacterLimitBehaviour.h"
-#import "NSString+ACIEmoji.h"
+#import "NSString+CLEmoji.h"
 
 @implementation CLCharacterLimitBehaviour
 
@@ -31,7 +31,7 @@
     } else {
         NSInteger canInputLength = self.maxCount + text.length - modifiedText.length;
         if (canInputLength > 0) {  /**< 标识该次输入还可以输入的字符长度 */
-            NSString *s = [text aci_truncateTailingToMaxLength:canInputLength];
+            NSString *s = [text cl_truncateTailingToMaxLength:canInputLength];
             [textView setText:[textView.text stringByReplacingCharactersInRange:range withString:s]];
             [self textViewDidChange:textView];
         }
